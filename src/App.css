@@ -1,0 +1,63 @@
+:root {
+  --light-back: rgb(255, 255, 255);
+  --light-folder: rgb(181, 181, 181);
+  --light-rim: rgb(223, 223, 223);
+
+  --mid-back: rgb(136, 136, 136);
+  --mid-folder: rgb(80, 80, 80);
+  --mid-rim: rgb(38, 38, 38);
+
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--mid-back);
+  display: flex;
+  align-items: center;
+}
+
+/* .container {
+width: 1100px;
+height: 1100px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(40, 40, 40);
+
+} */
+
+
+
+.container {
+  width: 1000px;
+  height: 1000px;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  background-color: var(--mid-folder);
+  border-radius: 15px;
+}
+
+.container-rim {
+  width: 1000px;
+  height: 1000px;
+  border: 10px solid var(--mid-rim);
+  box-shadow: -1px 0px 42px -4px rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+ 
+  border-radius: 15px;
+}
