@@ -54,6 +54,13 @@
     margin-bottom: -70px;
   }
 
+  .note9{
+    z-index: 28;
+    margin-bottom: -70px;
+  }
+
+
+
 
 
 .defaultHeading {
@@ -73,7 +80,7 @@
 
 
 .heading1 {
-    background-color: var(--Note1);
+    /* background-color: var(--Note1); */
 z-index: 46;
 margin-left: 0px;
 }
@@ -117,7 +124,14 @@ background-color: var(--Note1);
     background-color: var(--Note1);
       margin-left: 500px;
      z-index: 32;
-     }      
+     } 
+     
+     .heading9 {
+        background-color: var(--Note1);
+          margin-left: 750px;
+         z-index: 30;
+         }      
+            
          
         
             
@@ -138,7 +152,7 @@ background-color: var(--Note1);
 
   .tab1 {
     z-index: 44;
-    background-color: var(--Note1);
+    /* background-color: var(--Note1); */
   }
 
 .tab2 {
@@ -172,6 +186,11 @@ background-color: var(--Note1);
     z-index: 30;
     background-color: var(--Note1);
  }
+ .tab9 {
+    z-index: 28;
+    background-color: var(--Note1);
+ }
+
 
 
 

@@ -6,7 +6,7 @@ import './FileStyles3.css'
 
 import { useInputValue } from '../hooks/useInputValue'
 
-function FileCard( { name, classStyle, id, onSelected, isActive, body }) {
+function FileCard( { name, classStyle, id, onSelected, isActive, body, folderColor }) {
 
     
    const theText = useInputValue("")
@@ -15,8 +15,8 @@ function FileCard( { name, classStyle, id, onSelected, isActive, body }) {
     
 
   return (
-    <div className={`defaultNote note${classStyle} ${isActive  ? 'moving' : ''}`}>
-        <div onClick={()=>{
+    <div  className={`defaultNote note${classStyle} ${isActive  ? 'moving' : ''}`}>
+        <div style={{backgroundColor: folderColor}} onClick={()=>{
            
             // setIsBig(!isBig)
             if(onSelected) {
@@ -28,9 +28,10 @@ function FileCard( { name, classStyle, id, onSelected, isActive, body }) {
         }
          className={`defaultHeading heading${classStyle}`}>{name}</div>
 
-        <div className={`defaultTab tab${classStyle} ${isActive ? 'moving' : ''}`}>
+        <div style={{backgroundColor: folderColor}} className={`defaultTab tab${classStyle} ${isActive ? 'moving' : ''}`}>
             <div className={`paper ${isActive  ? 'moving' : ''}`}>
                  <textarea className={`the-text ${isActive  ? 'moving' : ''}`} {...theText} >{theText.value}</textarea>
+              
             </div>
            
         </div>
