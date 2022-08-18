@@ -1,30 +1,38 @@
 import React, { useState } from 'react';
 // import '../App.css';
 // import './FileStyles.css'
-import './FileStyles2.css'
-// import './FileStyles3.css'
+// import './FileStyles2.css'
+import './FileStyles3.css'
 
-function FileCard( { name, classStyle,  id, onFolderClick, }) {
-    const [isBig, setIsBig] = useState(false)
+import { useInputValue } from '../hooks/useInputValue'
+
+function FileCard( { name, classStyle, id, onSelected, isActive, body }) {
+
     
+   const theText = useInputValue("")
 
  
     
 
   return (
-    <div className={`defaultNote note${classStyle} ${isBig  ? 'moving' : ''}`}>
-        <div onClick={()=>(
+    <div className={`defaultNote note${classStyle} ${isActive  ? 'moving' : ''}`}>
+        <div onClick={()=>{
            
-            setIsBig(!isBig)
-        )
+            // setIsBig(!isBig)
+            if(onSelected) {
+                onSelected(id)  
+            }
+            
+        }
            
         }
          className={`defaultHeading heading${classStyle}`}>{name}</div>
 
-        <div className={`defaultTab tab${classStyle} ${isBig ? 'moving' : ''}`}>
-            <div className={`paper ${isBig  ? 'moving' : ''}`} 
-            ></div>
-            {/* <textarea className='the-text' cols="100" rows="10"></textarea> */}
+        <div className={`defaultTab tab${classStyle} ${isActive ? 'moving' : ''}`}>
+            <div className={`paper ${isActive  ? 'moving' : ''}`}>
+                 <textarea className={`the-text ${isActive  ? 'moving' : ''}`} {...theText} >{theText.value}</textarea>
+            </div>
+           
         </div>
     </div>  
 
