@@ -5,7 +5,7 @@
 
   --mid-back: rgb(136, 136, 136);
   --mid-folder: rgb(80, 80, 80);
-  --mid-rim: rgb(36, 36, 36);
+  --mid-rim: rgb(211, 211, 211);
  
     --taskbar: rgb(206, 206, 206);
     --pink: rgb(254, 236, 251);
@@ -49,7 +49,7 @@ background-color: rgb(40, 40, 40);
   justify-items: center;
   align-items: flex-end;
   flex-direction: column;
-  background: linear-gradient(90deg, rgba(41,41,41,1) 0%, rgba(78,78,78,1) 50%, rgba(41,41,41,1) 100%);
+  background: linear-gradient(90deg, rgba(41,41,41,1) 0%, rgba(71,71,71,1) 39%, rgba(78,78,78,1) 52%, rgba(71,71,71,1) 67%, rgba(41,41,41,1) 100%);
   border-radius: 15px;
   
 }
@@ -65,8 +65,6 @@ background-color: rgb(40, 40, 40);
   align-items: flex-end;
   flex-direction: column-reverse;
   overflow: hidden;
-
- 
   border-radius: 15px;
 }
 
@@ -83,11 +81,12 @@ background-color: rgb(40, 40, 40);
 border-radius: 10px;
   margin-right: 200px;
   margin-left: 20px;
-  background-color: rgba(125, 125, 125, 0.29);
-  border: 5px solid var(--mid-rim);
+  background-color: rgba(53, 53, 53, 0.29);
+ border: 4px solid var(--mid-rim);
   display: flex;
   align-items: center;
   flex-direction: column;
+  color:rgb(225, 225, 225)
  
 }
 
@@ -121,6 +120,7 @@ border-radius: 10px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  cursor: pointer;
   background-color: var(--pink);
 }
 
@@ -128,6 +128,7 @@ border-radius: 10px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  cursor: pointer;
   background-color: var(--green);
 }
 
@@ -137,6 +138,7 @@ border-radius: 10px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  cursor: pointer;
   background-color: var(--blue);
 }
 
@@ -144,25 +146,14 @@ border-radius: 10px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  cursor: pointer;
   background-color: var(--yellow);
 }
-.pink:active {
-  border: 5px solid rgb(58, 58, 58);
-background-color: var(--pink);
-}
-.green:active {
-  border: 5px solid rgb(58, 58, 58);
-background-color: var(--green);
-}
-.blue:active {
-  border: 5px solid rgb(58, 58, 58);
-background-color: var(--blue);
-}
-.yellow:active {
-  border: 5px solid rgb(58, 58, 58);
-background-color: var(--yellow);
-}
 
+
+.border {
+  border: 5px solid rgb(55, 55, 55);
+}
 
 
 .add-btn {
@@ -172,12 +163,21 @@ background-color: var(--yellow);
   align-items: center;
   width: 210px;
   height: 70px;
+  cursor: pointer;
   background-color: rgb(237, 237, 237);
   border-radius: 15px;
   box-shadow: 0px 0px 28px -9px rgba(0,0,0,0.75);
+  color:rgb(40, 40, 40)
 }
 
-.add-btn:active {
-  color: white;
+.add-btn:hover{
+  color: rgb(213, 213, 213);
   background-color: var(--mid-rim);
+  background-color: rgb(65, 65, 65);
+
+}
+.add-btn:active {
+  color: rgb(103, 103, 103);
+  background-color: var(--mid-rim);
+  background-color: rgb(23, 23, 23);
 }

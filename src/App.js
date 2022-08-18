@@ -11,6 +11,8 @@ import uuid from 'react-uuid';
 function App() {
   const [name, setName] = useState('')
   const [color, setColor] = useState('')
+  const [deletable, setdeletable] = useState(false)
+  const [selectedColor, setSelectedColor] = useState('pink')
 
   function handleSetColor(rgbColor) {
     setColor(rgbColor)
@@ -22,7 +24,7 @@ setName(e.target.value)
 }
 
   const [folders, setTheFolders] = useState([
-    {name: 'Dad', classStyle: '1', body:'', isActive: false, id: 123, folderColor: 'rgb(254, 236, 251)'},
+    {name: 'Dad', classStyle: '1', body:'', isActive: false, id: 123, folderColor: 'rgb(254, 236, 251)', isDeletable: false},
     // {name: 'Kendall', classStyle: '2', body: '', isActive: false, id: 153 },
   ])
 
@@ -60,6 +62,8 @@ setName(e.target.value)
 
 
 
+
+
   function onAddFolder(){
     if(folders.length > 7) {
       alert('Max folders')
@@ -93,12 +97,13 @@ setName(e.target.value)
         </div>
         <h1>Folder Color</h1>
         <div className='colors'>
-            <div className='pink' onClick={() => setColor('rgb(254, 236, 251)')}></div>
-            <div className='green' onClick={()=> setColor('rgb(214, 255, 239)')}></div>
-            <div className='blue' onClick={() => setColor('rgb(217, 240, 255)')}></div>
-            <div className='yellow' onClick={() => setColor('rgb(254, 255, 227)')}></div>
+            <div className={`pink ${selectedColor === 'pink' ? 'border' : ''}`} onClick={() => {setSelectedColor('pink'); setColor('rgb(254, 236, 251)')}}></div>
+            <div className={`green ${selectedColor === 'green' ? 'border' : ''}`} onClick={()=> {setSelectedColor('green'); setColor('rgb(214, 255, 239)')}}></div>
+            <div className={`blue ${selectedColor === 'blue' ? 'border' : ''}`} onClick={()=> {setSelectedColor('blue'); setColor('rgb(217, 240, 255)')}}></div>
+            <div className={`yellow ${selectedColor === 'yellow' ? 'border' : ''}`} onClick={()=>{setSelectedColor('yellow'); setColor('rgb(254, 255, 227)')}}></div>
         </div>
         <div className='add-btn' onClick={onAddFolder}><h1>Create Folder</h1></div>
+     
     </div>
 
       

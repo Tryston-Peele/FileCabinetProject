@@ -15,6 +15,7 @@
    width: 980px;
    position: relative;
    height: 150px;
+   transition: linear 0.5s;
 }
 
 .note1 {
@@ -148,6 +149,7 @@ background-color: var(--Note1);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: linear 0.5s;
   }
 
   .tab1 {
@@ -197,6 +199,7 @@ background-color: var(--Note1);
 .defaultNote.moving{
     width: 980px;
     height: 500px;
+    transition: linear 0.5s;
   
     
 }
@@ -208,6 +211,7 @@ background-color: var(--Note1);
      /* test */
      display: flex;
      align-items: flex-start;
+     transition: linear 0.5s;
 }
 
 
@@ -217,12 +221,13 @@ background-color: var(--Note1);
     height: 70px;
     background-color: white;
     border-radius: 10px;
+    transition: linear 0.5s;
  
 }
 
 .paper.moving {
     height: 400px;
-    
+    transition: linear 0.5s;
 }
 
 .the-text {

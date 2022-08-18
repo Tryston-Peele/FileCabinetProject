@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 // import './FileStyles2.css'
 import './FileStyles3.css'
 
-import { useInputValue } from '../hooks/useInputValue'
+import { useInputValue } from './hooks/useInputValue'
 
 function FileCard( { name, classStyle, id, onSelected, isActive, body, folderColor }) {
 
