@@ -27,7 +27,7 @@
 
 .note1 {
     height: 130px;
-    z-index: 12;
+    z-index: 50;
     margin-top: -80px;
     margin-bottom: -35px;
     margin-left: 0px;
@@ -47,7 +47,7 @@
     margin-left: 0px;
     height: 20px;
     background-color: var(--Note1);
-    z-index: 13;
+    z-index: 51;
     position: absolute;
     top: -23px;
   
@@ -56,7 +56,7 @@
   
 .tab1 {
     height: 100px;
-    z-index: 11;
+    z-index: 49;
     background-color: var(--Note1);
     border: 2px solid black;
     margin-top: -5px;
@@ -82,13 +82,13 @@
  .defaultNote.moving{
     width: 980px;
     height: 500px;
-    animation: slide ease-in;
+    animation: grow ease-in;
 }
 
 .defaultTab.moving{
     width: 980px;
     height: 500px;
-    animation: slide ease-in;
+    animation: grow ease-in;
      /* test */
      display: flex;
      align-items: flex-start;
@@ -101,13 +101,14 @@
   height: 150px;
   z-index: auto;
   position: relative;
+  margin-bottom: 15px;
 }
 
 .heading2 {
    
     background-color: var(--Note2);
     margin-left: 250px;
-    z-index: 11;
+    z-index: 49;
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -118,7 +119,7 @@
 
 .tab2 {
        height: 90px;
-       z-index: 10;
+       z-index: 48;
        background-color: var(--Note2);
         display: flex;
         justify-content: center;
@@ -130,9 +131,9 @@
      .note3{
    
         height: 150px;
-        /* z-index: 9; */
+        z-index: 47;
         margin-top: -80px;
-        margin-bottom: -80px;
+        margin-bottom: -70px;
         margin-left: 0px;
         margin-right: 0px;
         position: relative;
@@ -144,15 +145,15 @@
         border-top: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
-        margin-left: 550px;
-        z-index: 9;
+        margin-left: 540px;
+        z-index: 47;
         position: absolute;
         top: -23px;
     } 
 
     .tab3 {
         height: 90px;
-        z-index: 8;
+        z-index: 46;
         background-color: var(--Note3);
        
         border-top: 2px solid black;
@@ -163,8 +164,130 @@
         align-items: center;
     } 
 
+/* tab 4 styles */
 
-    .paper {
+.note4{
+   
+    height: 150px;
+    z-index: 45;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+
+} 
+
+.heading4{
+    background-color: blue;
+    margin-left:780px;
+    border-top: 2px solid black;
+border-left: 2px solid black;
+border-right: 2px solid black;
+    
+    z-index: 45;
+    position: absolute;
+    top: -23px;
+} 
+
+.tab4 {
+    height: 120px;
+    z-index: 44;
+    background-color: blue;
+   
+    border-top: 2px solid black;
+border-left: 2px solid black;
+border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* tab 5 styles */
+
+.note5{
+   
+    height: 150px;
+    z-index: 43;
+    margin-top: -30px;
+    margin-bottom: -40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+
+} 
+
+.heading5{
+    background-color: rgb(255, 0, 247);
+    margin-left:550px;
+    border-top: 2px solid black;
+border-left: 2px solid black;
+border-right: 2px solid black;
+    
+    z-index: 43;
+    position: absolute;
+    top: -23px;
+} 
+
+.tab5 {
+    height: 120px;
+    z-index: 42;
+    background-color: rgb(255, 0, 217);
+   
+    border-top: 2px solid black;
+border-left: 2px solid black;
+border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+
+
+
+
+/* tab 6 styles */
+.note6{
+   
+    height: 150px;
+    z-index: 41;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+
+} 
+
+.heading6{
+    background-color: rgb(255, 234, 0);
+    margin-left:550px;
+    border-top: 2px solid black;
+border-left: 2px solid black;
+border-right: 2px solid black;
+    
+    z-index: 41;
+    position: absolute;
+    top: -23px;
+} 
+
+.tab6 {
+    height: 120px;
+    z-index: 40;
+    background-color: rgb(255, 255, 0);
+   
+    border-top: 2px solid black;
+border-left: 2px solid black;
+border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+
+ .paper {
         margin-top: 20px;
         width: 900px;
         height: 70px;
@@ -173,7 +296,7 @@
      
     }
 
-    .paper.moving {
+ .paper.moving {
         height: 400px;
         
     }
