@@ -1,0 +1,245 @@
+:root {
+    --Note1: rgb(254, 236, 251);
+    --Note2: rgb(241, 255, 244);
+    --Note3: rgb(203, 192, 255);
+    --test: rgb(94, 94, 94);
+    --test2: rgb(113, 112, 112);
+    --line: rgb(197, 185, 255);
+    --line2: rgb(208, 255, 185);
+}
+
+
+.defaultNote {
+    display: flex;
+   flex-direction: column;
+   width: 980px;
+   position: relative;
+   height: 150px;
+   transition: linear 0.5s;
+}
+
+.note1 {
+    z-index: 45;
+    margin-bottom: -50px;
+}
+
+
+.note2{
+  z-index: 43;
+  margin-bottom: -70px;
+}
+
+.note3{
+    z-index: 41;
+    margin-bottom: -70px;
+  }
+  .note4{
+    z-index: 39;
+    margin-bottom: -70px;
+  }
+  .note5{
+    z-index: 37;
+    margin-bottom: -70px;
+  }
+  .note6{
+    z-index: 35;
+    margin-bottom: -70px;
+  }
+  .note7{
+    z-index: 32;
+    margin-bottom: -70px;
+  }
+
+  .note8{
+    z-index: 30;
+    margin-bottom: -70px;
+  }
+
+  .note9{
+    z-index: 28;
+    margin-bottom: -70px;
+  }
+
+
+
+
+
+.defaultHeading {
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px 5px 1px 1px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    position: absolute;
+    top: -23px;
+  }
+
+
+
+
+.heading1 {
+    /* background-color: var(--Note1); */
+z-index: 46;
+margin-left: 0px;
+}
+
+.heading2 {
+    background-color: var(--Note1);
+margin-left: 250px;
+z-index: 44;
+    }
+
+.heading3 {
+background-color: var(--Note1);
+ margin-left: 500px;
+ z-index: 42;
+     }
+
+ .heading4 {
+    background-color: var(--Note1);
+        margin-left: 750px;
+      z-index: 40;
+             }     
+
+.heading5 {
+background-color: var(--Note1);
+  margin-left: 500px;
+ z-index: 38;
+ }
+
+ .heading6 {
+    background-color: var(--Note1);
+      margin-left: 250px;
+     z-index: 36;
+     }
+
+ .heading7 {
+ background-color: var(--Note1);
+     margin-left: 0px;
+ z-index: 34;  }
+        
+ .heading8 {
+    background-color: var(--Note1);
+      margin-left: 500px;
+     z-index: 32;
+     } 
+     
+     .heading9 {
+        background-color: var(--Note1);
+          margin-left: 750px;
+         z-index: 30;
+         }      
+            
+         
+        
+            
+            
+    
+    
+
+
+
+  .defaultTab {
+    width: 980px;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: linear 0.5s;
+  }
+
+  .tab1 {
+    z-index: 44;
+    /* background-color: var(--Note1); */
+  }
+
+.tab2 {
+   z-index: 42;
+   background-color: var(--Note1);;
+}
+
+.tab3 {
+    z-index: 40;
+    background-color: var(--Note1);
+ }
+ .tab4 {
+    z-index: 38;
+    background-color: var(--Note1);
+ }
+ .tab5 {
+    z-index: 36;
+    background-color: var(--Note1);
+ }
+ .tab6 {
+    z-index: 34;
+    background-color: var(--Note1);
+ }
+
+ .tab7 {
+    z-index: 32;
+    background-color: var(--Note1);
+ }
+
+ .tab8 {
+    z-index: 30;
+    background-color: var(--Note1);
+ }
+ .tab9 {
+    z-index: 28;
+    background-color: var(--Note1);
+ }
+
+
+
+
+.defaultNote.moving{
+    width: 980px;
+    height: 500px;
+    transition: linear 0.5s;
+  
+    
+}
+
+.defaultTab.moving{
+    width: 980px;
+    height: 500px;
+   
+     /* test */
+     display: flex;
+     align-items: flex-start;
+     transition: linear 0.5s;
+}
+
+
+.paper {
+    margin-top: 20px;
+    width: 900px;
+    height: 70px;
+    background-color: white;
+    border-radius: 10px;
+    transition: linear 0.5s;
+ 
+}
+
+.paper.moving {
+    height: 400px;
+    transition: linear 0.5s;
+}
+
+.the-text {
+    width: 100px;
+    border: none;
+    resize: none;
+    height: 65px;
+    width: 900px;
+    outline: none;
+
+}
+
+.the-text.moving {
+    height: 390px;
+}
