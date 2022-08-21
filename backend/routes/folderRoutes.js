@@ -1,20 +1,15 @@
 const express = require("express")
+//const { update } = require("tar")
 const router = express.Router()
+const {getFolder, setFolder, updateFolder, deleteFolder} = require('../controllers/folderController')
 
-router.get('/files', (req,res) => {
-    res.status(200).json({})
-})
 
-router.post('/files', (req, res) => {
-    res.status(200).json({})
-})
+router.get('/files',getFolder)
 
-router.put('/files:id', (req,res) => {
-    res.status(200).json({message: `update goal ${req.params.id}`})
-})
+router.post('/files', setFolder)
 
-router.delete('/files:id', (req,res) => {
-    res.status(200).json({message: `update goal ${req.params.id}`})
-})
+router.put('/files:id', updateFolder)
 
-module.exports = router
+router.delete('/files:id', deleteFolder)
+
+module.exports = router; 
