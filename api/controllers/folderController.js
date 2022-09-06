@@ -5,8 +5,15 @@ const Folder = require('../models/folderModel')
 //@access
 
 const getFolder = asyncHandler(async(req, res) => {
-    const folders = await Folder.find()
+
+  try {
+    const folders = await Folder.find();
+
     res.status(200).json(folders)
+  } catch (error) {
+    res.status(500).json('whoops');
+  }
+
 })
 
 //desc: set folder
@@ -14,13 +21,16 @@ const getFolder = asyncHandler(async(req, res) => {
 //@access
 
 const setFolder = asyncHandler(async(req, res) => {
-    if (!req.body.text) {
+    if (!req.body.name) {
         res.status(400)
-        throw new Error("Please add a text field")
+        throw new Error("Please add a name")
     }
     const folders = await Folder.create({
-        text: req.body.text,
-       // user: req.user.id,
+        name: req.body.name,
+        body: req.body.body,
+        classStyle: req.body.classStyle,
+        folderColor: req.body.folderColor,
+        isActive: req.body.isActive
       })
     
       res.status(200).json(folders)
@@ -68,6 +78,7 @@ const deleteFolder = asyncHandler(async(req,res) => {
       res.status(400)
       throw new Error('Goal not found')
     }
+
   
     // Check for user
  /*   if (!req.user) {

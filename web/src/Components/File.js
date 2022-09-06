@@ -2,9 +2,7 @@ import { useEffect, useState } from 'react';
 import './File.css';
 import FileCard from './FileCards/FileCard'
 import uuid from 'react-uuid';
-
-
-
+import axios from 'axios'
 
 
 
@@ -13,22 +11,52 @@ function File() {
   const [color, setColor] = useState('')
   const [deletable, setdeletable] = useState(false)
   const [selectedColor, setSelectedColor] = useState('pink')
+  const [styleNum, setStyleNum] = useState(2)
+
+ const fetchFolders = async() => {
+   const results = await axios.get('http://localhost:8000/api/files')
+   console.log(results.data)
+   setTheFolders(results.data)
+ }
+
+ const createFolder = async() => {
+   try {
+   const results = await axios.post('http://localhost:8000/api/files', {
+     name: name,
+      classStyle: styleNum,
+      body: 'kendall',
+      folderColor: selectedColor,
+      isActive: false
+   })
+
+   console.log(results)
+   if(results && results.data){
+    fetchFolders()
+   }
+   } catch(error){
+    console.log('an error occured while creating a new folder')
+   }
+ }
+
+  useEffect(()=> {
+    fetchFolders()
+  }, [])
 
   function handleSetColor(rgbColor) {
     setColor(rgbColor)
     
   }
 
-function handleSetName(e) {
-setName(e.target.value)
-}
+  function handleSetName(e) {
+  setName(e.target.value)
+  }
 
   const [folders, setTheFolders] = useState([
     {name: 'Dad', classStyle: '1', body:'', isActive: false, id: 123, folderColor: 'rgb(254, 236, 251)', isDeletable: false},
     // {name: 'Kendall', classStyle: '2', body: '', isActive: false, id: 153 },
   ])
 
-  const [styleNum, setStyleNum] = useState(3)
+
 
 
   // const folders = [
@@ -71,16 +99,17 @@ setName(e.target.value)
     setStyleNum(styleNum + 1)
 
    console.log(styleNum)
-    const newFolder = {
-      name: name,
-      body: '',
-      id: uuid(),
-      classStyle: styleNum,
-      isActive: false,
-      folderColor: color
-    }
+    // const newFolder = {
+    //   name: name,
+    //   body: '',
+    //   id: uuid(),
+    //   classStyle: styleNum,
+    //   isActive: false,
+    //   folderColor: color
+    // }
   
-    setTheFolders([ ...folders, newFolder,])
+    // setTheFolders([ ...folders, newFolder,])
+      createFolder()
     setName('')
   }
   }

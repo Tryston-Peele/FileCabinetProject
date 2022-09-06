@@ -70,24 +70,26 @@
   
   
   
-  .input-heading {
-    margin-top: 100px;
-    margin-bottom: 0px;
-  }
+
   
   .side-container{
-    height: 700px;
+    height: 100vh;
     width: 350px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
     margin-right: 200px;
-    margin-left: 20px;
-    background-color: rgba(53, 53, 53, 0.29);
-   border: 4px solid var(--mid-rim);
+    margin-left: 0px;
+    background-color: rgba(34, 34, 34, 0.29);
+   /* border: 4px solid var(--mid-rim); */
     display: flex;
     align-items: center;
     flex-direction: column;
     color:rgb(225, 225, 225)
    
+  }
+
+  .input-heading {
+    margin-top: 300px;
+    margin-bottom: 0px;
   }
   
   .input-container {
@@ -95,10 +97,12 @@
     height: 100px;
     display: flex;
     justify-content: center;
+  margin-top: 20px;
   
   }
   
   .input-text {
+   
     height: 60px;
     width: 290px;
     font-size: 25px;

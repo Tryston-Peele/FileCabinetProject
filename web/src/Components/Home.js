@@ -30,7 +30,11 @@ function Home() {
     <div className="App">
       <h1 className = "square font">Filing Cabinet</h1>
   
-        <Link to="/files">
+        {/* <Link to="/files">
+        <button type = "button" className = "button">Open</button>
+        </Link> */}
+
+        <Link to='/signup'>
         <button type = "button" className = "button">Open</button>
         </Link>
      
