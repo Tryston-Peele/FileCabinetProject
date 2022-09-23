@@ -3,13 +3,13 @@ This project was a three week development sprint completed by Trystan and I in a
 
 # Contributions:
 Tryston: Full stack for login (user auth), full stack for folders page within the file cabinet (most challenging part of project), file organization, and debugging Ezra's code :/  
-Ezra: Design concept, Home page, react router, and connecting backend to database. 
+Ezra: Design concept, Home page, react router, and connecting backend to database.   
 Shared responsibilties:  
 Database requests, connecting front end to back end
 
 
 
-
+Notes for running app
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
