@@ -1,7 +1,7 @@
-#File Cabinet Project
+# File Cabinet Project
 This project was a three week development sprint completed by Trystan and I in august of 2022. We used the MERN stack to complete it. When you run the program, you press the open button on the home page to move to the folders, where you can add and delete folders. 
 
-#Contributions:
+# Contributions:
 Tryston: Full stack for login (user auth), full stack for folders page within the file cabinet (most challenging part of project), file organization, and debugging Ezra's code :/
 Ezra: Design concept, Home page, react router, and connecting backend to database. 
 Shared responsibilties: 
