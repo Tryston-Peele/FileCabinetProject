@@ -1,3 +1,3 @@
 export const folderColors = {
-    pink: 'pink'
-}
+  pink: "pink",
+};

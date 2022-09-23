@@ -1,15 +1,19 @@
-const express = require("express")
+const express = require("express");
 //const { update } = require("tar")
-const router = express.Router()
-const {getFolder, setFolder, updateFolder, deleteFolder} = require('../controllers/folderController')
+const router = express.Router();
+const {
+  getFolder,
+  setFolder,
+  updateFolder,
+  deleteFolder,
+} = require("../controllers/folderController");
 
+router.get("/files", getFolder);
 
-router.get('/files', getFolder)
+router.post("/files", setFolder);
 
-router.post('/files', setFolder)
+router.put("/files/:id", updateFolder);
 
-router.put('/files/:id', updateFolder)
+router.delete("/files/:id", deleteFolder);
 
-router.delete('/files/:id', deleteFolder)
-
-module.exports = router; 
+module.exports = router;

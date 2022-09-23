@@ -1,159 +1,157 @@
 .defaultNote {
-    display: flex;
-   flex-direction: column;
-   width: 980px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  width: 980px;
+}
+
 .defaultHeading {
-    width: 100px;
-    height: 25px;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 5px 5px 1px 1px;
-  }
+  width: 100px;
+  height: 25px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px 5px 1px 1px;
+}
 
 .defaultTab {
-    width: 980px;
-  
-  }
+  width: 980px;
+}
 
 .note1 {
-    height: 130px;
-    z-index: 12;
-    margin-top: -80px;
-    margin-bottom: -10px;
-    margin-left: 0px;
-    margin-right: 0px;
-    position: relative;
-  } 
-  
- 
-  
-  
-  
+  height: 130px;
+  z-index: 12;
+  margin-top: -80px;
+  margin-bottom: -10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+}
+
 .heading1 {
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    margin-left: 0px;
-    height: 20px;
-    background-color: rgb(254, 242, 255);
-    z-index: 13;
-    position: absolute;
-    top: -23px;
-  
-  }
-  
-  
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin-left: 0px;
+  height: 20px;
+  background-color: rgb(254, 242, 255);
+  z-index: 13;
+  position: absolute;
+  top: -23px;
+}
+
 .tab1 {
-    height: 100px;
-    z-index: 11;
-    background: linear-gradient(180deg, rgb(254, 242, 255) 0%, rgba(255,255,255,1) 43%);
-    border: 2px solid black;
-    margin-top: -5px;
-    margin-bottom: -5px;
-    margin-left: 0px;
-    margin-right: 0px;
-    display: flex;
-  }
+  height: 100px;
+  z-index: 11;
+  background: linear-gradient(
+    180deg,
+    rgb(254, 242, 255) 0%,
+    rgba(255, 255, 255, 1) 43%
+  );
+  border: 2px solid black;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+}
 
 .the-text {
-    outline: none;
-    border: none;
-    resize: none;
-    background-color: transparent;
-    height: 80px;
-    width: 900px;
-    margin-top: 10px;
+  outline: none;
+  border: none;
+  resize: none;
+  background-color: transparent;
+  height: 80px;
+  width: 900px;
+  margin-top: 10px;
 }
 
- .defaultNote.moving{
-    width: 980px;
-    height: 500px;
-    animation: slide ease-in;
+.defaultNote.moving {
+  width: 980px;
+  height: 500px;
+  animation: slide ease-in;
 }
 
-.defaultTab.moving{
-    width: 980px;
-    height: 500px;
-    animation: slide ease-in;
-     /* test */
-     display: flex;
-     align-items: flex-start;
+.defaultTab.moving {
+  width: 980px;
+  height: 500px;
+  animation: slide ease-in;
+  /* test */
+  display: flex;
+  align-items: flex-start;
 }
-
 
 /* tab folder 2 styles */
 
-.note2{
+.note2 {
   height: 150px;
   z-index: auto;
   position: relative;
 }
 
 .heading2 {
-   
-    background-color: rgb(227, 247, 255);
-    margin-left: 250px;
-    z-index: 11;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    position: absolute;
-    top: -23px;
-    
-    }
+  background-color: rgb(227, 247, 255);
+  margin-left: 250px;
+  z-index: 11;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  position: absolute;
+  top: -23px;
+}
 
 .tab2 {
-       height: 90px;
-       z-index: 10;
-       background: linear-gradient(180deg, rgb(227, 247, 255) 0%, rgba(255,255,255,1) 43%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid black;
-    }
+  height: 90px;
+  z-index: 10;
+  background: linear-gradient(
+    180deg,
+    rgb(227, 247, 255) 0%,
+    rgba(255, 255, 255, 1) 43%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
 
- /* tab folder 3 styles */
-     .note3{
-   
-        height: 150px;
-        /* z-index: 9; */
-        margin-top: -80px;
-        margin-bottom: -80px;
-        margin-left: 0px;
-        margin-right: 0px;
-        position: relative;
-    
-    } 
+/* tab folder 3 styles */
+.note3 {
+  height: 150px;
+  /* z-index: 9; */
+  margin-top: -80px;
+  margin-bottom: -80px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+}
 
-    .heading3{
-        background-color: rgb(227, 255, 231);
-        border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-        margin-left: 550px;
-        z-index: 9;
-        position: absolute;
-        top: -23px;
-    } 
+.heading3 {
+  background-color: rgb(227, 255, 231);
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin-left: 550px;
+  z-index: 9;
+  position: absolute;
+  top: -23px;
+}
 
-    .tab3 {
-        height: 90px;
-        z-index: 8;
-        background: linear-gradient(180deg, rgb(227, 255, 231) 0%, rgba(255,255,255,1) 43%);
-       
-        border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } 
+.tab3 {
+  height: 90px;
+  z-index: 8;
+  background: linear-gradient(
+    180deg,
+    rgb(227, 255, 231) 0%,
+    rgba(255, 255, 255, 1) 43%
+  );
 
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .paper {
-        width: 1000px;
-        height: 100px;
-     
-    }
+.paper {
+  width: 1000px;
+  height: 100px;
+}

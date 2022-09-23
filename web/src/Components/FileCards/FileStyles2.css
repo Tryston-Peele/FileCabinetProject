@@ -1,103 +1,93 @@
 :root {
-    --Note1: rgb(137, 134, 177);
-    --Note2: rgb(116, 155, 116);
-    --Note3: rgb(154, 106, 142);
-    --test: rgb(74, 74, 74);
+  --Note1: rgb(137, 134, 177);
+  --Note2: rgb(116, 155, 116);
+  --Note3: rgb(154, 106, 142);
+  --test: rgb(74, 74, 74);
 }
 
 .defaultNote {
-    display: flex;
-   flex-direction: column;
-   width: 980px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  width: 980px;
+}
+
 .defaultHeading {
-    width: 100px;
-    height: 25px;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 5px 5px 1px 1px;
-    color: rgb(0, 0, 0);
-  }
+  width: 100px;
+  height: 25px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px 5px 1px 1px;
+  color: rgb(0, 0, 0);
+}
 
 .defaultTab {
-    width: 980px;
-  
-  }
+  width: 980px;
+}
 
 .note1 {
-    height: 130px;
-    z-index: 50;
-    margin-top: -80px;
-    margin-bottom: -35px;
-    margin-left: 0px;
-    margin-right: 0px;
-    position: relative;
-   
-  } 
-  
- 
-  
-  
-  
+  height: 130px;
+  z-index: 50;
+  margin-top: -80px;
+  margin-bottom: -35px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+}
+
 .heading1 {
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    margin-left: 0px;
-    height: 20px;
-    background-color: var(--Note1);
-    z-index: 51;
-    position: absolute;
-    top: -23px;
-  
-  }
-  
-  
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin-left: 0px;
+  height: 20px;
+  background-color: var(--Note1);
+  z-index: 51;
+  position: absolute;
+  top: -23px;
+}
+
 .tab1 {
-    height: 100px;
-    z-index: 49;
-    background-color: var(--Note1);
-    border: 2px solid black;
-    margin-top: -5px;
-    margin-bottom: -5px;
-    margin-left: 0px;
-    margin-right: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
+  height: 100px;
+  z-index: 49;
+  background-color: var(--Note1);
+  border: 2px solid black;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .the-text {
-    outline: none;
-    border: none;
-    resize: none;
-    background-color: transparent;
-    height: 80px;
-    width: 900px;
-    margin-top: 10px;
+  outline: none;
+  border: none;
+  resize: none;
+  background-color: transparent;
+  height: 80px;
+  width: 900px;
+  margin-top: 10px;
 }
 
- .defaultNote.moving{
-    width: 980px;
-    height: 500px;
-    animation: grow ease-in;
+.defaultNote.moving {
+  width: 980px;
+  height: 500px;
+  animation: grow ease-in;
 }
 
-.defaultTab.moving{
-    width: 980px;
-    height: 500px;
-    animation: grow ease-in;
-     /* test */
-     display: flex;
-     align-items: flex-start;
+.defaultTab.moving {
+  width: 980px;
+  height: 500px;
+  animation: grow ease-in;
+  /* test */
+  display: flex;
+  align-items: flex-start;
 }
-
 
 /* tab folder 2 styles */
 
-.note2{
+.note2 {
   height: 150px;
   z-index: auto;
   position: relative;
@@ -105,198 +95,179 @@
 }
 
 .heading2 {
-   
-    background-color: var(--Note2);
-    margin-left: 250px;
-    z-index: 49;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    position: absolute;
-    top: -23px;
-    
-    }
+  background-color: var(--Note2);
+  margin-left: 250px;
+  z-index: 49;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  position: absolute;
+  top: -23px;
+}
 
 .tab2 {
-       height: 90px;
-       z-index: 48;
-       background-color: var(--Note2);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 2px solid black;
-    }
+  height: 90px;
+  z-index: 48;
+  background-color: var(--Note2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
 
- /* tab folder 3 styles */
-     .note3{
-   
-        height: 150px;
-        z-index: 47;
-        margin-top: -80px;
-        margin-bottom: -70px;
-        margin-left: 0px;
-        margin-right: 0px;
-        position: relative;
-    
-    } 
+/* tab folder 3 styles */
+.note3 {
+  height: 150px;
+  z-index: 47;
+  margin-top: -80px;
+  margin-bottom: -70px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+}
 
-    .heading3{
-        background-color: var(--Note3);
-        border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-        margin-left: 540px;
-        z-index: 47;
-        position: absolute;
-        top: -23px;
-    } 
+.heading3 {
+  background-color: var(--Note3);
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  margin-left: 540px;
+  z-index: 47;
+  position: absolute;
+  top: -23px;
+}
 
-    .tab3 {
-        height: 90px;
-        z-index: 46;
-        background-color: var(--Note3);
-       
-        border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } 
+.tab3 {
+  height: 90px;
+  z-index: 46;
+  background-color: var(--Note3);
+
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* tab 4 styles */
 
-.note4{
-   
-    height: 150px;
-    z-index: 45;
-    margin-top: -30px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
-    position: relative;
+.note4 {
+  height: 150px;
+  z-index: 45;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+}
 
-} 
+.heading4 {
+  background-color: blue;
+  margin-left: 780px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 
-.heading4{
-    background-color: blue;
-    margin-left:780px;
-    border-top: 2px solid black;
-border-left: 2px solid black;
-border-right: 2px solid black;
-    
-    z-index: 45;
-    position: absolute;
-    top: -23px;
-} 
+  z-index: 45;
+  position: absolute;
+  top: -23px;
+}
 
 .tab4 {
-    height: 120px;
-    z-index: 44;
-    background-color: blue;
-   
-    border-top: 2px solid black;
-border-left: 2px solid black;
-border-right: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
+  height: 120px;
+  z-index: 44;
+  background-color: blue;
+
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* tab 5 styles */
 
-.note5{
-   
-    height: 150px;
-    z-index: 43;
-    margin-top: -30px;
-    margin-bottom: -40px;
-    margin-left: 0px;
-    margin-right: 0px;
-    position: relative;
+.note5 {
+  height: 150px;
+  z-index: 43;
+  margin-top: -30px;
+  margin-bottom: -40px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+}
 
-} 
+.heading5 {
+  background-color: rgb(255, 0, 247);
+  margin-left: 550px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 
-.heading5{
-    background-color: rgb(255, 0, 247);
-    margin-left:550px;
-    border-top: 2px solid black;
-border-left: 2px solid black;
-border-right: 2px solid black;
-    
-    z-index: 43;
-    position: absolute;
-    top: -23px;
-} 
+  z-index: 43;
+  position: absolute;
+  top: -23px;
+}
 
 .tab5 {
-    height: 120px;
-    z-index: 42;
-    background-color: rgb(255, 0, 217);
-   
-    border-top: 2px solid black;
-border-left: 2px solid black;
-border-right: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
+  height: 120px;
+  z-index: 42;
+  background-color: rgb(255, 0, 217);
 
-
-
-
-
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* tab 6 styles */
-.note6{
-   
-    height: 150px;
-    z-index: 41;
-    margin-top: -30px;
-    margin-bottom: -30px;
-    margin-left: 0px;
-    margin-right: 0px;
-    position: relative;
+.note6 {
+  height: 150px;
+  z-index: 41;
+  margin-top: -30px;
+  margin-bottom: -30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+}
 
-} 
+.heading6 {
+  background-color: rgb(255, 234, 0);
+  margin-left: 550px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 
-.heading6{
-    background-color: rgb(255, 234, 0);
-    margin-left:550px;
-    border-top: 2px solid black;
-border-left: 2px solid black;
-border-right: 2px solid black;
-    
-    z-index: 41;
-    position: absolute;
-    top: -23px;
-} 
+  z-index: 41;
+  position: absolute;
+  top: -23px;
+}
 
 .tab6 {
-    height: 120px;
-    z-index: 40;
-    background-color: rgb(255, 255, 0);
-   
-    border-top: 2px solid black;
-border-left: 2px solid black;
-border-right: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
+  height: 120px;
+  z-index: 40;
+  background-color: rgb(255, 255, 0);
 
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.paper {
+  margin-top: 20px;
+  width: 900px;
+  height: 70px;
+  background-color: white;
+  border-radius: 10px;
+}
 
- .paper {
-        margin-top: 20px;
-        width: 900px;
-        height: 70px;
-        background-color: white;
-        border-radius: 10px;
-     
-    }
-
- .paper.moving {
-        height: 400px;
-        
-    }
+.paper.moving {
+  height: 400px;
+}

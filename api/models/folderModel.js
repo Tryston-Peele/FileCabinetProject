@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const folderSchema = mongoose.Schema(
   {
@@ -9,26 +9,25 @@ const folderSchema = mongoose.Schema(
     // },
     name: {
       type: String,
-      required: [true, 'Please add a text value'],
+      required: [true, "Please add a text value"],
     },
     folderColor: {
       type: String,
-
     },
     body: {
       type: String,
     },
-    classStyle: {
-      type: String,
-    },
-    isActive: {
+    // classStyle: {
+    //   type: String,
+    // },
+    isDefault: {
       type: Boolean,
-      required: [false, 'is active is required'],
+      required: [false, "is default is required"],
     },
   },
   {
     timestamps: true,
   }
-)
+);
 
-module.exports = mongoose.model('Folder', folderSchema)
+module.exports = mongoose.model("Folder", folderSchema);
