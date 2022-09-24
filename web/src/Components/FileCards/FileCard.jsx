@@ -40,7 +40,9 @@ function FileCard({
         className={`defaultTab tab${classStyle} ${isActive ? "moving" : ""}`}
       >
         <div className={`paper ${isActive ? "moving" : ""}`}>
-          <div className="delete-btn" onClick={() => deleteFolder(id)}></div>
+          <button className="delete-btn" onClick={() => deleteFolder(id)}>
+            Delete
+          </button>
           <textarea
             className={`the-text ${isActive ? "moving" : ""}`}
             {...theText}
